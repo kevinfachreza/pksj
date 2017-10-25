@@ -75,3 +75,8 @@ ncrack -p [port] --user [username] -P [text_password] [ip_target]
 medusa -u root -P list.txt -h 192.168.33.10 -M sshMedusa v2.2_rc3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net> 
 ```
 
+```
+git status
+git add
+git commit
+```
