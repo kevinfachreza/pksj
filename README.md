@@ -79,3 +79,52 @@ ncrack -p [port] --user [username] -P [text_password] [ip_target]
 ```
 medusa -u root -P list.txt -h 192.168.33.10 -M sshMedusa v2.2_rc3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net> 
 ```
+
+
+## Uji Penetrasi 2
+
+1. Install fail2ban
+
+```
+sudo apt-get install fail2ban
+```
+
+2. Install Ip-tables persistent
+
+```
+sudo apt-get install iptables-persistent
+```
+
+3. Buka konfigurasi fail2ban
+
+```
+sudo nano /etc/fail2ban/jail.conf
+```
+
+4. Atur bantime. Bantime merupakan lamanya waktu jika host di ban
+5. Atur maxretry. Max retry merupakan maksimal percobaan gagal
+6. Atur findtime. Findtime merupakan waktu diantara percobaan gagal 1 dan terakhir.
+7. Masukkan command berikut
+
+```
+sudo iptables -A INPUT -i lo -j ACCEPT
+sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT
+sudo iptables -A INPUT -j DROP
+```
+
+8. Cek Iptables
+
+```
+sudo iptables -S
+```
+
+9. Start fail2ban
+
+```
+sudo service fail2ban start
+```
+
+10. Lihat perubahan iptables
+
