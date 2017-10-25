@@ -61,12 +61,14 @@
 #### NCrack
 
 1. Jalankan NCrack
--- ncrack -p [port] --user [username] -P [text_password] [ip_target] --
+``` ncrack -p [port] --user [username] -P [text_password] [ip_target] 
+```
 
 #### Medusa
 
 1. Jalankan Medusa
--- medusa -u root -P list.txt -h 192.168.33.10 -M sshMedusa v2.2_rc3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net> --
+``` medusa -u root -P list.txt -h 192.168.33.10 -M sshMedusa v2.2_rc3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net> 
+```
 
 
 1. Jalankan Medusa
