@@ -69,6 +69,9 @@
 1. Jalankan Medusa
 ``` medusa -u root -P list.txt -h 192.168.33.10 -M sshMedusa v2.2_rc3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net> 
 ```
-
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
 
 1. Jalankan Medusa
