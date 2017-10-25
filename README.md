@@ -40,8 +40,8 @@
 ##### Install SSH Server
 
 1. Untuk install ssh server ketik
-`sudo apt-get install openssh-server`
+> sudo apt-get install openssh-server
 
 1. Cek jika install berhasil menggunakan command berikut
-`service ssh status`
+> service ssh status
 
