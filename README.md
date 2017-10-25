@@ -41,10 +41,14 @@
 #### Install SSH Server
 
 1. Untuk install ssh server ketik
-> sudo apt-get install openssh-server
+```
+sudo apt-get install openssh-server
+```
 
 2. Cek jika install berhasil menggunakan command berikut
-> service ssh status
+```
+service ssh status
+```
 
 #### Install Tools Medusa, THC-Hydra, NCrack
 
@@ -56,7 +60,9 @@
 
 1. Hydra membutuhkan list password, maka dibuat file password bernama """""""
 1. Jalankan Hydra
-> hydra -l [username] -P [text_password] [ip_target] -t [jumlah_thread] [tipe_protocol]
+```
+hydra -l [username] -P [text_password] [ip_target] -t [jumlah_thread] [tipe_protocol]
+```
 
 #### NCrack
 
