@@ -37,3 +37,11 @@
 1. Klik Install
 1. Setelah Install, ikuti menu Onboarding sesuai pada Kali
 
+##### Install SSH Server
+
+1. Untuk install ssh server ketik
+`sudo apt-get install openssh-server`
+
+1. Cek jika install berhasil menggunakan command berikut
+`service ssh status`
+
