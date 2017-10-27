@@ -49,7 +49,7 @@ sudo apt-get install openssh-server
 ```
 service ssh status
 ```
-
+https://user-images.githubusercontent.com/17487644/32114550-0fdae0cc-bb6e-11e7-8987-bf3d03952e06.PNG
 #### Install Tools Medusa, THC-Hydra, NCrack
 
 1. THC-Hydra, NCrack, dan Medusa merupakan tools default Kali, sehingga tidak perlu install
