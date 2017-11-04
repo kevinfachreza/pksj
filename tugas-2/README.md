@@ -124,37 +124,47 @@ apt-get install unzip
 2. Masuk ke dashboard WP lalu klik add new pada Plugins
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/SS/league/plugin2.PNG?raw=true)
+
 3. Upload file yang telah di download, league manager tadi lalu klik install now
 
 3.1 Karena bukan di locaalhost maka disini kita install ftp dahulu, kita install vsftpd
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/instalasi-plugin/league%20manager/install%20ftp.PNG?raw=true)
+
 3.2 Atur settingan vsftpd sebagai berikut
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/instalasi-plugin/league%20manager/edit%20conf.PNG?raw=true)
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/instalasi-plugin/league%20manager/conf.PNG?raw=true)
+
 3.3 Restart vsftpd lalu klik upload dan install pada Admin Wordpress
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/instalasi-plugin/league%20manager/restart.PNG?raw=true)
+
 4. Setelah install berhasil, klik activate plugin
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/instalasi-plugin/league%20manager/installed.PNG?raw=true)
+
 5. Buat liga baru
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/instalasi-plugin/league%20manager/add%20league.PNG?raw=true)
+
 6. Buat Season Baru
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/instalasi-plugin/league%20manager/add%20season.PNG?raw=true)
+
 7. Buat team, dan isi keterangan
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/instalasi-plugin/league%20manager/add%20team.PNG?raw=true)
+
 8. Buat pertandingan
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/instalasi-plugin/league%20manager/add%20match.PNG?raw=true)
+
 9. Hasil posting
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/SS/league/hasil2.PNG?raw=true)
+
 # Plugin Video Player
 
 1. Download plugin Wordpress Video Player
