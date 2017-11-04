@@ -207,6 +207,7 @@ apt-get install unzip
 1. Lakukan scan pada wordpress yang kita install.
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/inject/wpscan/1.PNG?raw=true)
+
 2. Lihat versi plugin dan vulnerable version plugin. Disini kami terdapat banyak plugins vulnerable namun yang kita inject hanya 2
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/inject/wpscan/2.PNG?raw=true)
@@ -215,6 +216,7 @@ apt-get install unzip
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/inject/wpscan/5.PNG?raw=true)
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/inject/wpscan/6.PNG?raw=true)
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/inject/wpscan/9.PNG?raw=true)
+
 3. Explore pada reference yang tercantum pada hasil wpscan.
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/inject/wpscan/8.PNG?raw=true)
