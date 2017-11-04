@@ -10,11 +10,11 @@
 #### OS
 ##### 1. Ubuntu Server
 Ubuntu server adalah ubuntu yang didesain untuk di install di server. Perbedaan mendasar, di Ubuntu Server tidak tersedia GUI. Jika anda menggunakan ubuntu server artinya anda harus bekerja dengan perintah perintah di layar hitam ayng sering disebut konsole. Jika anda datang dari windows, maka tampilan ubuntu server seperti DOS.
-[sumber] (http://www.candra.web.id/mengenal-ubuntu-server/).
+(http://www.candra.web.id/mengenal-ubuntu-server/).
 
 ##### 2. Kali Linux
 Kali Linux adalah penerus distro BackTrack. Sama seperti BackTrack, distro ini dilengkapi dengan berbagai tools Linux untuk melakukan penetration testing. Dengan Kali Linux, pengguna yang melakukan pengujian keamanan tidak perlu repot men-install atau membuat kode program/script baru.
-[sumber] (https://thesolidsnake.wordpress.com/2013/12/17/mencari-password-dengan-kali-linux/).
+(https://thesolidsnake.wordpress.com/2013/12/17/mencari-password-dengan-kali-linux/).
 
 
 #### Plugins
@@ -291,3 +291,14 @@ apt-get install unzip
 
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/inject/league%20sqlmap/3-1.PNG?raw=true)
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-2/assets/inject/league%20sqlmap/3-2.PNG?raw=true)
+
+
+## Kesimpulan
+Walaupun wordpress sudah populer dan sering sekali di update, celah celah masih saja sering ditemukan, terutama pada plugin.
+Sering sering untuk mengecek ulang keamanan aplikasi sebelum deploy aplikasi.
+
+## Saran
+1. Selalu update plugin dengan cara cek update secara berkala
+1. Cek keamanan plugin yang ingin digunakan
+1. Selalu escape string untuk setiap input user
+1. Lakukan wpscan pada plugin yg terinstal pada wordpress anda
