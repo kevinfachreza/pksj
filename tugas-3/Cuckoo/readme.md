@@ -229,6 +229,7 @@ proxyport = 9141
 
 ## configurasi windows 7
 1. Install python 2.7 dan Adobe Reader DC
+
 ![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/install_python_2.7.png)
 
 2. Matikan Firewall
