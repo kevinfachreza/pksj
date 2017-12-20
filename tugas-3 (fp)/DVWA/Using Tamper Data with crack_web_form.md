@@ -1,6 +1,6 @@
 # Lesson 5 - Using Tamper Data with crack_web_form.pl
 
-##Mengatur Tamper Data
+## Mengatur Tamper Data
 
 1. Buka Firefox, lalu pilih Add-ons.
 2. Lalu enable **Tamper data**.
@@ -8,7 +8,7 @@
 3. Restart Mozila anda.
 
 
-##Mengambil Data HTTP-POST Menggunakan Tamper Data
+## Mengambil Data HTTP-POST Menggunakan Tamper Data
 1. Setelah merestart Mozila, Buka DVWA yang sudah di host Fedora, menggunakan IP fedora (pada tutorial ini 192.168.3.13):
 	* http://<IP Fedora>/dvwa/login.php
 2. Nyalakan Tamper Data
@@ -44,7 +44,7 @@
 	* lalu save dengan nama "dvwa-post-data.txt"
 ![9 save notepad](https://user-images.githubusercontent.com/17487644/34213292-512afb1a-e5d1-11e7-94c5-db37f2c80b09.png)
 
-##Mengatur dan Menjalankan crack_web.pl
+## Mengatur dan Menjalankan crack_web.pl
 1. Buat direktori
 	* mkdir /pentest/passwords/cwf
 ![10 mkdir pentest](https://user-images.githubusercontent.com/17487644/34213294-51603456-e5d1-11e7-9527-8c66716c38fa.png)
@@ -73,5 +73,5 @@
 ![15 successfull crack](https://user-images.githubusercontent.com/17487644/34213278-4db791fa-e5d1-11e7-9bef-4e0b98b407a7.png)
 
 
-##Bukti Selesai Lesson 5
+## Bukti Selesai Lesson 5
 ![16 bukti lesson](https://user-images.githubusercontent.com/17487644/34213280-4e39f212-e5d1-11e7-8db8-36593b7e90d8.png)
