@@ -10,13 +10,13 @@
 ## Dasar Teori
 1. Tools dan Malware 
 
-<b>Cuckoo Sandbox 2.0.5<b> adalah sistem yang dibuat untuk tempat / wadah analisis malware secara otomatis. Sistem ini merupakan aplikasi open source. Sistem ini berjalan secara otomatis dan dapat menganalisa files serta mendapat hasil analisis yang komprehensif dari sebuah malware yang di analisa yang berjalan didalam sistem operasi yang ter isolir.
+<b>Cuckoo Sandbox 2.0.5</b> adalah sistem yang dibuat untuk tempat / wadah analisis malware secara otomatis. Sistem ini merupakan aplikasi open source. Sistem ini berjalan secara otomatis dan dapat menganalisa files serta mendapat hasil analisis yang komprehensif dari sebuah malware yang di analisa yang berjalan didalam sistem operasi yang ter isolir.
 
-<b>Malware<b> adalah suatu file atau software yang disisipi dengan barisan kode yang malicious/berbahaya yang digunakan untuk mengambil data sensitif, atau mengganggu jalannya service/operasi komputasi, bisa juga mendapatkan akses akses yang memiliki hak akses khusus.
+<b>Malware</b> adalah suatu file atau software yang disisipi dengan barisan kode yang malicious/berbahaya yang digunakan untuk mengambil data sensitif, atau mengganggu jalannya service/operasi komputasi, bisa juga mendapatkan akses akses yang memiliki hak akses khusus.
 
 2. Malware yang Digunakan 
 
-<b>Ransomware Locky<b> adalah ransomware yang disebarkan sebagai dokumen Word berbahaya yang melekat pada email spam. Email yang membawa Ransomware Locky biasanya berpura-pura memberikan faktur. dokumen Word berbahaya ini dapat segera mengeksekusi proses enkripsi berbahaya ketika macro Word diaktifkan. Jika tidak, teks Word ini muncul sebagai file yang rusak, dan juduldokumen menular ini mengatakan, “Enable macro if the data encoding is incorrect.” Anda tidak harus melakukan hal seperti yang diperintahkan!
+<b>Ransomware Locky</b> adalah ransomware yang disebarkan sebagai dokumen Word berbahaya yang melekat pada email spam. Email yang membawa Ransomware Locky biasanya berpura-pura memberikan faktur. dokumen Word berbahaya ini dapat segera mengeksekusi proses enkripsi berbahaya ketika macro Word diaktifkan. Jika tidak, teks Word ini muncul sebagai file yang rusak, dan juduldokumen menular ini mengatakan, “Enable macro if the data encoding is incorrect.” Anda tidak harus melakukan hal seperti yang diperintahkan!
 
 ## Instalasi
 1. Install depedensi
