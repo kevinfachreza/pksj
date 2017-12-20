@@ -12,17 +12,21 @@
 ```
 sudo apt-get install python python-pip python-dev libffi-dev libssl-dev 
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/1.png)
 
 2. Install libxml2-dev dan libslt-dev
 ```
 sudo apt-get install libxml2-dev libxslt-dev
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/3.png)
+
 
 3. Install cuckoo sandbox
 
 ```
 pip install -u cuckoo
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/4.png)
 
 4. Download VMWare
 5. Buat user untuk cuckoo
@@ -30,12 +34,15 @@ pip install -u cuckoo
 sudo adduser cuckoo
 ```
 
+
 6. Install mongodb
 ```
 sudo apt-get install mongodb
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/5.png)
 
-7. Install TCPDump
+
+7. Install TCPDump & Libcap2-bin
 
 ```
 sudo apt-get install tcpdup
@@ -43,6 +50,8 @@ sudo apt-get install libcap2-bin
 sudo setcap cap_net_raw,cap_net_admin=eip/usr/sbin/tcpdump
 getcap /usr/sbin/tcpdump
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/9.png)
+
 
 8. Install Volatility
 ```
@@ -51,20 +60,32 @@ git clone https://github.com/volatilityfoundation/volatility.git
 cd /home/YourUserName/volatility
 sudo python setup.py install
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/11.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/12.png)
+
 
 9. Download Distrom3 <https://github.com/gdabah/distorm/releases>
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/13.png)
+
+
 10. Ekstrak dan install distrop
 ```
 tar -xvzf distorm-3.4.0.tar.gz
 cd /home/<username>/Downloads/distorm-3.4.0
 sudo python setup.py install
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/14.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/15.png)
+
 
 11. Install AutoConf dan Libtool-bin
 ```
 sudo apt-get install autoconf
 sudo apt-get install libtool-bin
 ```
+
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/17.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/18.png)
 
 12. Download Yara dan lakukan ekstrak serta install <https://github.com/VirusTotal/yara/releases>
 ```
@@ -77,6 +98,13 @@ sudo make install
 sudo -H pip install yara-python
 ```
 
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/19.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/20.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/21.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/22.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/23.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/25.png)
+
 13. Download dan Install PyCrypto <https://pypi.python.org/pypi/pycrypto>
 ```
 tar -xvzf pycrypto-2.6.1.tar.gz
@@ -84,16 +112,22 @@ cd /home/<username>/Downloads/pycrypto-2.6.1
 python setup.py build
 sudo python setup.py install
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/27.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/28.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/30.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/31.png)
 
 14. Install Mitmproxy
 ```
-sudo apt-get install python3-pip python3-dev libssl-dev libtiff5-dev libjpeg8-dev zlib1g-dev libwebp-dev
 sudo pip3 install mitmproxy
 mitmproxy
 cd ~/.mitmproxy
 cp mitmproxy-ca-cert.p12 /home/YourUserName/Downloads/cuckoo/analyzer/windows/bin/cert.p12 
 mitmdump = /usr/local/bin/mitmdump
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/36.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/40.png)
+
 
 15. Download ISO Windows 7 dan lakukan install windows 7 pada VM yang telah terinstall
 
@@ -156,3 +190,4 @@ cuckoo web runserver
 ```
 
 3. Akses 127.0.0.1:8000 pada browser
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/75.png)
