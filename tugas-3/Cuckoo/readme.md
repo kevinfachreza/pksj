@@ -229,19 +229,19 @@ proxyport = 9141
 
 ## configurasi windows 7
 1. Install python 2.7 dan Adobe Reader DC
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/install python 2.7.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/install_python_2.7.png)
 
 2. Matikan Firewall
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/sett fw.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/sett_fw.png)
 
 3. Matikan Windows Update
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/sett upd.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/sett_upd.png)
 
 4. Matikan User Account Control (UAC)
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/sett uac.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/sett_uac.png)
 
 5. Set static IP dan pakai DNS Google
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/konfig ip.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/konfig_ip.png)
 
 
 ## Uji Coba
