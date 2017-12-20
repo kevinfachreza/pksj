@@ -133,7 +133,7 @@ mitmdump = /usr/local/bin/mitmdump
 
 15. Download ISO Windows 7 dan lakukan install windows 7 pada VM yang telah terinstall
 
-## Konfigurasi
+## configurasi
 Lakukan edit file pada file file berikut 
 direktori : .cuckoo/conf
 
@@ -144,7 +144,7 @@ ip = 192.168.56.1
 port = 2042
 memory dump = yes
 ```
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/13.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/13.png)
 
 
 2. Auxiliary Conf
@@ -155,7 +155,7 @@ enabled = yes
 tcpdump = /usr/sbin/tcpdump
 mitm = yes
 ```
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/2.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/2.png)
 
 3. Virtualbox.conf
 ```
@@ -167,8 +167,8 @@ platform = windows
 ip = 192.168.56.10
 snapshot = snapshot1
 ```
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/3.png)
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/4.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/3.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/4.png)
 
 4. Reporting.conf
 ```
@@ -177,14 +177,14 @@ enabled = yes
 
 html = yes
 ```
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/5.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/5.png)
 
 5. Processing.conf
 ```
 [memory]
 enabled = yes
 ```
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/15.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/15.png)
 
 6. Atur IPTables
 ```
@@ -195,11 +195,11 @@ sudo iptables -A FORWARD -s 192.168.56.0/24 -j ACCEPT
 sudo iptables -A FORWARD -s 192.168.56.0/24 -d 192.168.56.0/24 -j ACCEPT
 sudo iptables -A FORWARD -j LOG
 ```
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/7.png)
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/9.png)
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/10.png)
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/11.png)
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/14.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/7.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/9.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/10.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/11.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/14.png)
 
 7. Atur routing pada cuckoo
 ```
@@ -219,7 +219,7 @@ proxyport = 9141
 
 ```
 
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/6.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/6.png)
 
 8. Restart routing
 
