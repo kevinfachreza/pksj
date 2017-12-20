@@ -133,7 +133,7 @@ mitmdump = /usr/local/bin/mitmdump
 
 15. Download ISO Windows 7 dan lakukan install windows 7 pada VM yang telah terinstall
 
-## configurasi
+## configurasi cuckoo
 Lakukan edit file pada file file berikut 
 direktori : .cuckoo/conf
 
@@ -226,6 +226,23 @@ proxyport = 9141
 ```
 /etc/init.d/tor restart
 ```
+
+## configurasi windows 7
+1. Install python 2.7 dan Adobe Reader DC
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/install python 2.7.png)
+
+2. Matikan Firewall
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/sett fw.png)
+
+3. Matikan Windows Update
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/sett upd.png)
+
+4. Matikan User Account Control (UAC)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/sett uac.png)
+
+5. Set static IP dan pakai DNS Google
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/config/konfig ip.png)
+
 
 ## Uji Coba
 1. Run Rooter Cuckoo
