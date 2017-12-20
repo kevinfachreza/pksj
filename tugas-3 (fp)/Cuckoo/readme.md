@@ -34,6 +34,8 @@ pip install -u cuckoo
 sudo adduser cuckoo
 ```
 
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/8.png)
+
 
 6. Install mongodb
 ```
