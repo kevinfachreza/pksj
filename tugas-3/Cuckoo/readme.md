@@ -144,6 +144,8 @@ ip = 192.168.56.1
 port = 2042
 memory dump = yes
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/13.png)
+
 
 2. Auxiliary Conf
 ```
@@ -153,6 +155,7 @@ enabled = yes
 tcpdump = /usr/sbin/tcpdump
 mitm = yes
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/2.png)
 
 3. Virtualbox.conf
 ```
@@ -164,6 +167,8 @@ platform = windows
 ip = 192.168.56.10
 snapshot = snapshot1
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/3.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/4.png)
 
 4. Reporting.conf
 ```
@@ -172,24 +177,105 @@ enabled = yes
 
 html = yes
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/5.png)
 
 5. Processing.conf
 ```
-memory = yes
+[memory]
+enabled = yes
+```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/15.png)
+
+6. Atur IPTables
+```
+sudo iptables -t nat -A POSTROUTING -o eth0 -s 192.168.56.0/24 -j MASQUERADE
+sudo iptables -P FORWARD DROP
+sudo iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
+sudo iptables -A FORWARD -s 192.168.56.0/24 -j ACCEPT
+sudo iptables -A FORWARD -s 192.168.56.0/24 -d 192.168.56.0/24 -j ACCEPT
+sudo iptables -A FORWARD -j LOG
+```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/7.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/9.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/10.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/11.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/14.png)
+
+7. Atur routing pada cuckoo
+```
+etc/tor/torrc
+
+TransPort 192.168.56.1:9141
+DNSPort 192.168.56.1:5454
+```
+
+```
+.cuckoo/conf/routing.conf
+
+[tor]
+enabled = yes
+dnsport = 5454
+proxyport = 9141
+
+```
+
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/konfig/6.png)
+
+8. Restart routing
+
+```
+/etc/init.d/tor restart
 ```
 
 ## Uji Coba
+1. Run Rooter Cuckoo
+```
+sudo cuckoo rooter -g cuckoo
+```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/run/5.png)
 
-1. Run Cuckoo
+
+
+2. Run Cuckoo
 ```
 cuckoo
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/run/2.png)
 
-2. Run Cuckoo pada web server
+3. Run Cuckoo pada web server
 
 ```
 cuckoo web runserver
 ```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/run/1.png)
 
-3. Akses 127.0.0.1:8000 pada browser
-![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/install/75.png)
+4. Akses 127.0.0.1:8000 pada browser
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/run/3.png)
+
+5. Run Virtual Box
+```
+sudo virtualbox
+```
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/run/4.png)
+
+6. Download salah satu file malware di https://github.com/ytisf/theZoo/tree/master/malwares
+kami mengambil salah satu file https://github.com/ytisf/theZoo/tree/master/malwares/Binaries/Ransomware.Locky
+
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/run/7.png)
+
+7. Upload file ke web
+
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/run/6.png)
+
+8. Maka nanti dari cuckoo akan otomatis membuka VM
+
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/run/8.png)
+
+9. Dan akan muncul hasil pada terminal cuckoo
+
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/run/9.png)
+
+10. Akan muncul pula hasil analisa pada web
+
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/run/10.png)
+![Alt text](https://github.com/kevinfachreza/pksj/blob/master/tugas-3/Cuckoo/assets/run/11.png)
